@@ -1,0 +1,20 @@
+@font-face{
+	font-family: 'forte' !important;
+	src: url('http://www.fontsaddict.com/fontface/forte.ttf');
+}
+
+body{
+	font-family: 'forte' !important;
+	background-image: url('3.jpg');
+	background-repeat: none;
+	width: 100%;
+}
+
+.btn-success{
+
+}
+
+.btn, .btn-danger, .btn-default{
+	background-color: #000 important;
+}
+

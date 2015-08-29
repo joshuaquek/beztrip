@@ -7,3 +7,12 @@
 meteor-platform
 autopublish
 insecure
+accounts-base
+accounts-password
+accounts-google
+less
+bootstrap
+service-configuration
+iron:router
+fortawesome:fontawesome
+accounts-ui
