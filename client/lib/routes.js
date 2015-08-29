@@ -2,9 +2,6 @@
 
 //------------------------------------- ROUTES ----------------------------------
 
-
-Router.route('/register');		// Register Page
-
 Router.route('/login');   		// Login Page
 
 Router.route('/', {				// Home Page
