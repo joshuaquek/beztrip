@@ -5,7 +5,7 @@
 # but you can also edit it by hand.
 
 meteor-platform
-<<<<<<< HEAD
+
 autopublish
 insecure
 accounts-base
@@ -16,10 +16,6 @@ bootstrap
 service-configuration
 iron:router
 fortawesome:fontawesome
-=======
-iron:router
 fourseven:scss
-accounts-base
-accounts-password
->>>>>>> 3f61e868ca7ef81f0390c340e3de0b29b81988f1
 accounts-ui
+jquery

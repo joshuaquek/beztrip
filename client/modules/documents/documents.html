@@ -1,0 +1,86 @@
+<template name="documents">
+
+<!--current/past tabs -->
+	<ul class="nav nav-tabs" role="tablist">
+	    <li role="presentation" class="active"><a href="#current" aria-controls="current" role="tab" data-toggle="tab">Current</a></li>
+	    <li role="presentation"><a href="#past" aria-controls="past" role="tab" data-toggle="tab">Past</a></li>
+	</ul>
+
+	<!--current/past tabs content -->
+	<div class="tab-content">
+	<!--begin current tab -->
+    <div role="tabpanel" class="tab-pane active" id="current">
+    	<!--accordion start -->
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingOne">
+		      <h4 class="panel-title">
+		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+		          Plan Trip
+		          <i class="fa fa-angle-right" style="font-size:3em; vertical-align:middle; float:right;"></i>
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+		      <div class="panel-body">
+		      </div>
+		  </div>
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingTwo">
+		      <h4 class="panel-title">
+		        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+		          Manage Trips
+		          <i class="fa fa-angle-down" style="font-size:3em; vertical-align:middle; float:right;"></i>
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+		      <div class="panel-body">
+		      <div style="text-align:center;" class="grey-line">
+		      	<a href="/managetrips"><i class="fa fa-angle-left" style="font-size:3em; vertical-align:middle; float:left;"></i></a>
+		      	<h3 style="color:#31CB82;">Documents</h3><br>
+			</div><br>
+
+		<div class="container-fluid content-font" align="center">
+			<table border="0">
+				<tr>
+					<td ><center><img src="add-purchase.png" style="width:50px;height:50px;"></center></td>
+
+					<td><center><img src="add-purchase.png" style="width:50px;height:50px;"></center></td>
+
+					<td><center><img src="add-purchase.png" style="width:50px;height:50px;"></center></td>
+				</tr>
+				<tr>
+					<td style="padding:0px 15px; text-align:center;"><span style="font-size: 10; ">FLIGHT ITINERARY</span></td>
+
+					<td style="padding:0px 15px; text-align:center;"><span style="font-size: 10;">TRAVEL INSURANCE</span></td>
+
+					<td style="padding:0px 15px; text-align:center;"><span style="font-size: 10;">VISA APPLICATION</span></td>
+				</tr>
+			</table>
+		</div>
+
+
+		      </div>
+		    </div> 
+		</div>
+		<!--end accordion -->
+    </div><!--end of current tab -->
+
+    <!--begin past tab -->
+    <div role="tabpanel" class="tab-pane" id="past">
+	
+<!--insert past trips here-->
+
+
+
+
+	</div><!--end of past tab -->	
+	</div><!-- end of tab content -->
+
+</div>
+</div>
+
+
+
+</template>
