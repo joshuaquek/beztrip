@@ -1,9 +1,30 @@
 <template name="navigation">
-    <ul>
-        <li><a href="{{pathFor route='home'}}">Home</a></li>
-        <li><a href="{{pathFor route='login'}}">Login</a></li>
-        <form id="logout-form">
-            <button type="submit">Log Out</button>
-        </form>
-    </ul>
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle navbar-left collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{pathFor 'home'}}">
+                    <img id="menu-logo" src="Logo-menu.png">
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="{{active 'home'}}"><a href="{{pathFor route='home'}}">Home</a></li>
+                    <li class="{{active 'trips'}}"><a href="{{pathFor route='trips'}}">Trips</a></li>
+                    <li ><a href="#">Logout</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+
+        </div><!--/.container-fluid -->
+    </nav>
+    <!--class="active"-->
+
+
 </template>
