@@ -1,51 +1,43 @@
 <template name="login">
 
 
+    <!-- <div class = "col-sm-4" style="height:100% !important; color:#fff;"></br> -->
 
+    <div class="app-logo">
+        <img src="Logo.png">
+    </div>
 
-<!-- <div class = "col-sm-4" style="height:100% !important; color:#fff;"></br> -->
-	
-	<div class="app-logo">
-<img src="Logo.png" style="width:100%;">
-
-	</div>
-
-	<div class="input-group">
+    <div class="input-group">
 	<span class="input-group-addon">
-    <i class="fa fa-envelope" style="font-size:0.75em;"></i>
+    <i class="fa fa-envelope"></i>
   	</span>
 
-	<input id="email" type="textbox" placeholder="Email Address" class="form-control">
-	 </div>
+        <input id="email" type="textbox" placeholder="Email Address" class="form-control">
+    </div>
 
-	 <br>
+    <br>
 
-	<div class="input-group">
+    <div class="input-group">
 	<span class="input-group-addon">
     <i class="fa fa-lock"></i>
   	</span>
-	  <input id="password" type="textbox" placeholder="Password" class="form-control">
+        <input id="password" type="textbox" placeholder="Password" class="form-control">
 
-	 </div>
+    </div>
 
-	<br><br>
-	<button class="btn btn-success btn-default" type="submit" value="Sign In" style="width:100%">Sign In</button><br>
-	<br>
-
-
-	{{> loginButtonsBig}}
-
-	<!-- <button class="btn btn-danger btn-default" id="google" type="submit" value="Sign In With Google" style="width:100%">Sign In With Google</button><br> -->
-	
-<!-- </div> -->
+    <br><br>
+    <button class="btn btn-success btn-default" type="submit" value="Sign In">Sign In</button>
+    <br>
+    <br>
 
 
-<!-- </div> -->
+    {{> loginButtonsBig}}
+
 
 </template>
 
-<template name="loginButtonsBig">  
-    <a id="loginGoogle" class="btn btn-danger btn-default btn-lg btn-login google" style="width:100%" href="#">
+<template name="loginButtonsBig">
+    <a id="loginGoogle" class="btn btn-danger btn-default btn-lg btn-login google" href="#">
         <i class="fa fa-google-plus fa-fw"></i> Sign in with Google
     </a>
 </template> 

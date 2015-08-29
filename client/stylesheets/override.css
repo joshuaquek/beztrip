@@ -4,7 +4,6 @@
 }
 
 body{
-	font-family: 'forte' !important;
 	background-image: url('3.jpg');
 	background-repeat: none;
 	width: 100%;
@@ -18,3 +17,7 @@ body{
 	background-color: #000 important;
 }
 
+.navbar-left{
+	float: left;
+	margin: 10px 10px;
+}
