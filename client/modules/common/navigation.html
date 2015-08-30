@@ -17,7 +17,8 @@
                 <ul class="nav navbar-nav">
                     <li class="{{active 'home'}}"><a href="{{pathFor route='home'}}">Home</a></li>
                     <li class="{{active 'trips'}}"><a href="{{pathFor route='trips'}}">Trips</a></li>
-                    <li ><a href="#">Logout</a></li>
+                    {{#if onFinancesPage 'finances'}}<li class="{{active 'addPurchase'}}"><a href="{{pathFor route='addPurchase'}}">Add Purchase</a></li>{{/if }}
+                    <li ><button id="logout">Logout</button></li>
                 </ul>
             </div><!--/.nav-collapse -->
 
@@ -26,4 +27,10 @@
     <!--class="active"-->
 
 
+</template>
+
+
+<template name="finances">
+    <h1>FINANCES</h1>
+    <h1>FINANCES</h1>
 </template>

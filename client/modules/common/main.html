@@ -1,5 +1,9 @@
 <!--THIS IS THE MAIN LAYOUT THAT LOADS WITH EVERY PAGE-->
 <template name="main">
-    {{> navigation}}
-    {{> yield}}
+    {{#if currentUser}}
+        {{> navigation}}
+    {{/if}}
+    <div class="mainContainer">
+        {{> yield}}
+    </div>
 </template>

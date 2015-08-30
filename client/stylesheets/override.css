@@ -3,7 +3,7 @@
 	src: url('http://www.fontsaddict.com/fontface/forte.ttf');
 }
 body{
-	background-image: url('3.jpg');
+	background-image: linear-gradient(to bottom, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.2) 100%),url('3.jpg');
 	background-repeat: none;
 	width: 100%;
 }
