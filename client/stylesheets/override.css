@@ -2,7 +2,12 @@
 	font-family: 'Forte' !important;
 	src: url('http://www.fontsaddict.com/fontface/forte.ttf');
 }
-
+body{
+	/*font-family: 'forte' !important;*/
+	background-image: url('3.jpg');
+	background-repeat: none;
+	width: 100%;
+}
 .panel-title {
 	text-align: center !important;
 	font-weight: bolder;
