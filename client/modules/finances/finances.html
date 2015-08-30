@@ -76,6 +76,7 @@
 					<td>02/09/15</td>
 					<td><i class="fa fa-download"></i></td>
 				</tr>
+				{{> getpurchase}}
 			</table>
 		</div><!--end finance-->
 
@@ -121,4 +122,17 @@
 	</div><!-- end of tab content -->
 </div>
 </div>
+</template>
+
+<template name="getpurchase">
+	if (Session.get("purchase") === "bla"){
+        <tr>
+					<td>2</td>
+					<td>Drink</td>
+					<td>$80</td>
+					<td>02/09/15</td>
+					<td><i class="fa fa-download"></i></td>
+		</tr>
+	}
+
 </template>

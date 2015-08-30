@@ -29,10 +29,16 @@ Router.route('/finances', {				// Finances
 	template: 'finances'
 });
 
-Router.route('/documents', {				// Finances
+Router.route('/documents', {				// Documents
 	name: 'documents',
 	template: 'documents'
 });
+
+Router.route('/addpurchase', {				// AddPurchase
+	name: 'addpurchase',
+	template: 'addpurchase'
+});
+
 //---------------------------------- ROUTER CONFIG ------------------------------
 
 Router.configure({				// This defines the layout used for every page,...
