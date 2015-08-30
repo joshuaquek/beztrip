@@ -13,24 +13,18 @@
                     <img id="menu-logo" src="Logo-menu.png">
                 </a>
             </div>
+
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="{{active 'home'}}"><a href="{{pathFor route='home'}}">Home</a></li>
-                    <li class="{{active 'trips'}}"><a href="{{pathFor route='trips'}}">Trips</a></li>
-                    {{#if onFinancesPage 'finances'}}<li class="{{active 'addPurchase'}}"><a href="{{pathFor route='addPurchase'}}">Add Purchase</a></li>{{/if }}
+                    <li class="{{active 'home'}}"><a href="{{pathFor route='home'}}"><i class="fa fa-home"></i> &nbsp;Home</a></li>
+                    <li class="{{active 'trips'}}"><a href="{{pathFor route='trips'}}"><i class="fa fa-suitcase"></i> &nbsp;Trips</a></li>
+                    {{#if onFinancesPage 'finances'}}<li class="{{active 'addpurchase'}}"><a href="{{pathFor route='addpurchase'}}"><i class="fa fa-plus-circle"></i>&nbsp;Add Purchase</a></li>{{/if }}
                     <li ><button id="logout">Logout</button></li>
                 </ul>
             </div><!--/.nav-collapse -->
-
         </div><!--/.container-fluid -->
     </nav>
     <!--class="active"-->
 
 
-</template>
-
-
-<template name="finances">
-    <h1>FINANCES</h1>
-    <h1>FINANCES</h1>
 </template>

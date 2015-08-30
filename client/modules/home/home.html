@@ -1,114 +1,122 @@
 <template name="home">
-	<div class="container-fluid" style="background-color: #494949; height: 100%;">
-			<div class="row" align="center" style="background-color: #989494; height:2px;"></div>
-		
-			<div class="row" align="center" style="background-color: #494949; padding-top: 10px; padding-bottom: 10px;">
-				<div class="col-md-12 content-font">
-					<b><span id="todaydate" style="color: white; font-size:30;"></span></b>
-					<br>
-					<b><span id="todaytime" style="color: white; font-size:30;"></span></b>
-				</div>
-			</div>
-			
-			<div class="row" align="center" style="background-color: #989494; height:2px;"></div>
-			
-			<div class="row" align="center" style="background-color: #717171;">
-				<div class="col-md-12">
-					<img src="icons/weather.png" style="width:32px;height:32px;">
-					<span style="color: white;">Weather Conditions</span>
-				</div>
-			</div>
-			
-			<div class="row" align="center" style="background-color: #989494; height:2px;"></div>
-			
-			<div class="row content-font" align="center" style="background-color: #494949; padding-top: 10px; padding-bottom: 10px;">
-				<div class="col-md-3" ><img src="icons/light_rain.png" style="width:32px;height:32px;"></div>
-				<div class="col-md-6"><span style="color: white;">Light Rain (next 3 hours, Singapore)</span></div>
-				<div class="col-md-3"><span style="color: white;">26 &#8451;</span></div>
-			</div>
-			
-			<div class="row" align="center" style="background-color: #989494; height:2px;"></div>
-			
-			<div class="row" align="center" style="background-color: #717171;">
-				<div class="col-md-12">
-					<img src="icons/reminder.png" style="width:25px;height:25px;">
-					<span style="color: white;">Schedule</span>
-				</div>
-			</div>
-			
-			<div class="row" align="center" style="background-color: #989494; height:2px;"></div>
-			
-			<div class="row content-font" align="center" style="background-color: #494949; padding-top: 10px; padding-bottom: 10px;">
-				<div class="row" style="border-left-color:yellow">
-					<div class="col-md-1" style="background-color: yellow;"></div>
-					<div class="col-md-6" align="left" style="padding-left: 50px;"><span style="color: white;">11:45 PM - In 15 minutes (Lunch appointment at Kopitiam)</span></div>
-					<div class="col-md-5" align="left">
-						<div class="row">
-							<div class="col-md-3" align="center">
-								<span style="color: white;"><img src="icons/car_1.png" style="width:15px;height:15px;"><br>20 MIN</span>
-							</div>
-							<div class="col-md-3" align="center">
-								<span style="color: white;"><img src="icons/alert.png" style="width:15px;height:15px;"><br>Bring umbrella</span>
-							</div>
-							<div class="col-md-3" align="center">
-								<span style="color: white;"><img src="icons/alert.png" style="width:15px;height:15px;"><br>Running late</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="row">
-					<div class="col-md-1" style="background-color: blue;"></div>
-					<div class="col-md-6" align="left" style="padding-left: 50px;"><span style="color: white;">3:15 PM - In 3 hours 45 minutes (Project meeting at iDA Labs)</span></div>
-					<div class="col-md-5" align="left"><span style="color: white;"></span></div>
-				</div>
-				
-				<div class="row">
-					<div class="col-md-1" style="background-color: orange;"></div>
-					<div class="col-md-6" align="left" style="padding-left: 50px;"><span style="color: white;">5:15 PM - In 5 hours 45 minutes (Collect passport and Visa at HR Office)</span></div>
-					<div class="col-md-5" align="left">
-						<div class="row">
-							<div class="col-md-3" align="center">
-								<span style="color: white;"><img src="icons/alert.png" style="width:15px;height:15px;"><br>Important!</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="row" align="center" style="background-color: #989494; height:2px;"></div>
-			
-			<div class="row content-font" align="center" style="background-color: #717171;">
-				<div class="col-md-12">
-					<img src="icons/tools.png" style="width:25px;height:25px;">
-					<span style="color: white;">Quick Tools</span>
-				</div>
-			</div>
-			
-			<div class="row" align="center" style="background-color: #989494; height:2px;"></div>
-			
-			<div class="row" align="center" style="background-color: #494949; padding-top: 10px;">
-				<div class="col-md-3">
-					<img src="icons/car_1.png" style="width:32px;height:32px;"><br>
-					<span style="color:white; font-size:20;"><b>GO</b></span><br>
-					<span style="color:white; font-size:14;">SOMEWHERE</span>
-				</div>
-				<div class="col-md-3">
-					<img src="icons/food_1.png" style="width:32px;height:32px;"><br>
-					<span style="color:white; font-size:20;"><b>FIND</b></span><br>
-					<span style="color:white; font-size:14;">FOOD</span>
-				</div>
-				<div class="col-md-3">
-					<img src="icons/directions_2.png" style="width:32px;height:32px;"><br>
-					<span style="color:white; font-size:20;"><b>GET</b></span><br>
-					<span style="color:white; font-size:14;">DIRECTIONS</span>
-				</div>
-				<div class="col-md-3">
-					<img src="icons/help.png" style="width:32px;height:32px;"><br>
-					<span style="color:white; font-size:20;"><b>SEEK</b></span><br>
-					<span style="color:white; font-size:14;">HELP</span>
-				</div>
-			</div>
-		</div>
+    <div class="container-fluid" style="background-color: #494949; height: 100%;">
+        <div class="row" align="center" style="background-color: #989494; height:2px;"></div>
+
+        <div class="row" align="center" style="background-color: #494949; padding-top: 10px; padding-bottom: 10px;">
+            <div class="col-md-12 content-font">
+                <b><span id="todaydate" style="color: white; font-size:24px;"></span></b>
+                <br>
+                <b><span id="todaytime" style="color: white; font-size:30px;"></span></b>
+            </div>
+        </div>
+
+        <div class="row" align="center" style="background-color: #989494; height:2px;"></div>
+
+        <div class="row" align="center" style="background-color: #717171; padding:5px;">
+            <div class="col-md-12">
+                <img src="weather.png" class="home-img">
+                <span style="color: white;">Weather Conditions</span>
+            </div>
+        </div>
+
+        <div class="row" align="center" style="background-color: #989494; height:2px;"></div>
+
+        <div class="row content-font" align="center" style="background-color: #494949; padding-top: 20px; padding-bottom: 20px;">
+            <table border="0" width="100%">
+                <tr>
+                    <td style="text-align:center;">
+                        <img src="light_rain.png" class="home-img"></td>
+                    <td>
+                        <span style="color:white; font-size:1.2em"><b>Light Rain</b></span><br>
+				<span class="home-med">Next 3 hours<br>
+				Singapore</span></td>
+                    <td style="text-align:center"><span style="color: white; font-size:30px; ">26 &#8451;</span></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="row" align="center" style="background-color: #989494; height:2px;"></div>
+
+        <div class="row" align="center" style="background-color: #717171; padding: 5px">
+            <div class="col-md-12">
+                <img src="reminder.png" style="width:25px;height:25px;">
+                <span style="color: white;">Schedule</span>
+            </div>
+        </div>
+
+        <div class="row" align="center" style="background-color: #989494; height:2px;"></div>
+
+        <div class="row content-font" align="center" style="background-color: #494949;">
+            <div class="row" style="border-left: 20px solid #31CB82; border-bottom:1px solid #989494;">
+                <div class="home-schedule" align="left"><span class="home-med">11:45 PM - In 15 minutes</span>
+                    <br><span class="home-small">Lunch appointment at Kopitiam</span></div>
+
+                <div >
+                    <div class="home-icon">
+                        <span class="home-small"><img src="car_1.png"><br>20 MIN</span>
+                    </div>
+                    <div class="home-icon">
+                        <span class="home-small"><img src="alert.png"><br>Bring umbrella</span>
+                    </div>
+                    <div class="home-icon">
+                        <span class="home-small"><img src="alert.png"><br>Running late</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row" style="border-left: 20px solid yellow; border-bottom:1px solid #989494;">
+                <div class="home-schedule" align="left"><span class="home-med">3:15 PM - In 3 hours 45 minutes</span>
+                    <br><span class="home-small">Project meeting at iDA Labs</span></div>
+            </div>
+
+            <div class="row" style="border-left: 20px solid blue; border-bottom:1px solid #989494; ">
+                <div class="home-schedule" align="left"><span class="home-med">5:15 PM - In 5 hours 45 minutes</span><br>
+                    <span class="home-small">Collect passport and Visa at HR Office</span></div>
+                <div class="col-md-5" align="left">
+                    <div class="row">
+                        <div class="home-icon" align="center">
+                            <span class="home-small;"><img src="alert.png" style="width:15px;height:15px;"><br>Important!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" align="center" style="background-color: #989494; height:2px;"></div>
+
+        <div class="row content-font" align="center" style="background-color: #717171; padding:5px" >
+            <div class="col-md-12">
+                <img src="tools.png" style="width:25px;height:25px;">
+                <span style="color: white;">Quick Tools</span>
+            </div>
+        </div>
+
+        <div class="row" align="center" style="background-color: #989494; height:2px;"></div>
+
+        <div class="row" align="center" style="background-color: #494949; padding-top: 20px;">
+            <div class="home-tools-icon">
+                <img src="car_1.png" class="home-img"><br>
+                <span class="home-tools-up"><b>GO</b></span><br>
+                <span class="home-tools-down">SOMEWHERE</span>
+            </div>
+            <div class="home-tools-icon">
+                <img src="food_1.png" class="home-img"><br>
+                <span class="home-tools-up"><b>FIND</b></span><br>
+                <span class="home-tools-down">FOOD</span>
+            </div>
+            <div class="home-tools-icon">
+                <img src="directions_2.png" class="home-img"><br>
+                <span class="home-tools-up"><b>GET</b></span><br>
+                <span class="home-tools-down">DIRECTIONS</span>
+            </div>
+            <div class="home-tools-icon">
+                <img src="help.png" class="home-img"><br>
+                <span class="home-tools-up"><b>SEEK</b></span><br>
+                <span class="home-tools-down">HELP</span>
+            </div>
+        </div>
+    </div>
 
 </template>

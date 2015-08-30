@@ -17,6 +17,10 @@ body{
 	color:#000;
 }
 
+#accordion{
+	margin-bottom: -20px;
+}
+
 .panel {
 	border-radius: 0 !important;
 	margin-top: 0px !important;
@@ -32,15 +36,21 @@ body{
 	margin: 10px 10px;
 }
 
+.navbar-right{
+	float: right;
+	margin: 10px 10px;
+}
+
+
 .navbar-toggle{
 	float:left !important;
 	margin-top:15px;
 	margin-left:5px;
 }
 
-.navbar-brand{
-	float:right !important;
-}
+/*.navbar-brand{*/
+	/*float:right !important;*/
+/*}*/
 
 .navbar-nav{
 	font-weight: bold;
@@ -86,7 +96,61 @@ td{
 	border-bottom: 1px solid #f5f5f5;
 }
 
+.home-small{
+	font-size: 0.7em;
+	color:white;
+}
 
+.home-med{
+	font-size: 0.9em;
+	color:white;
+}
+
+.home-schedule{
+	padding: 10px;
+	min-width: 170px;
+	float:left;
+	color:white;
+}
+
+.home-icon{
+	width: 60px;
+	text-align:center;
+	float: left;
+	clear:none;
+	height:51px;
+	vertical-align: middle;
+	padding: 15px 0px;
+	font-size: 0.7em;
+	color:white;
+}
+
+.home-icon img{
+	width:15px;
+	height:15px;
+}
+
+.home-tools-up{
+	color:white;
+	font-size:14px;
+	padding-top: 10px;
+	padding-bottom: 0px;
+}
+
+.home-tools-down{
+	color:white;
+	font-size:11px;
+}
+
+.home-tools-icon{
+	width:25%;
+	float:left;
+}
+
+.home-img{
+	width:32px;
+	height:32px;
+}
 
 
 

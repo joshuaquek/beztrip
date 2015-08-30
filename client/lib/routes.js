@@ -6,7 +6,7 @@ Router.route('/login');   		// Login Page
 
 Router.route('/trips');   		// Trips Page
 
-Router.route('/finances');   		// Finances Page
+
 
 Router.route('/', {				// Home Page
 	name: 'home',

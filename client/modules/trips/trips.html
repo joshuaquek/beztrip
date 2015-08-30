@@ -1,20 +1,221 @@
 <template name="trips">
-    <div class="container">
-        <div class="row">
-            <div class="accordian">
-                Plan Trip
-                <i class="fa fa-angle-right"></i>
+
+
+    <div background="3.jpg" style="background-height:100%; background-repeat:no-repeat; ">
+
+        <!--current/past tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#current" aria-controls="current" role="tab"
+                                                      data-toggle="tab">Current</a></li>
+            <li role="presentation"><a href="#past" aria-controls="past" role="tab" data-toggle="tab">Past</a></li>
+        </ul>
+
+        <!--current/past tabs content -->
+        <div class="tab-content">
+            <!--begin current tab -->
+            <div role="tabpanel" class="tab-pane active" id="current">
+                <!--accordion start -->
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                                   aria-expanded="true" aria-controls="collapseOne">
+                                    Plan Trip
+                                    <i class="fa fa-angle-down"
+                                       style="font-size:3em; vertical-align:middle; float:right;"></i>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                             aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <div style="text-align:center; width:100%">Progress: 1/3</div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar"
+                                         aria-valuenow="1"
+                                         aria-valuemin="0" aria-valuemax="100" style="width:5%; color:#000">
+                                    </div>
+                                </div>
+                                <br><br>
+
+                                <div class="input-group">
+						<span class="input-group-addon">
+					    Trip Title:
+					  	</span>
+                                    <input id="trip-title" type="textbox" placeholder="Purpose"
+                                           class="form-control">
+                                </div>
+                                <br>
+
+                                <div class="input-group">
+						<span class="input-group-addon">
+					    Origin:
+					  	</span>
+                                    <input id="origin" type="textbox" placeholder="Location" class="form-control">
+                                </div>
+                                <br>
+
+                                <div class="input-group">
+						<span class="input-group-addon">
+					    Destination:
+					  	</span>
+                                    <input id="destination" type="textbox" placeholder="Location"
+                                           class="form-control">
+                                </div>
+                                <br>
+
+                                <div class="input-group">
+						<span class="input-group-addon">
+					    From:
+					  	</span>
+                                    <input id="from" type="textbox" placeholder="Period" class="form-control">
+						  <span class="input-group-addon">
+					    <i class="fa fa-calendar"></i>
+					  	</span>
+                                </div>
+                                <br>
+
+                                <div class="input-group">
+						<span class="input-group-addon">
+					    To:
+					  	</span>
+                                    <input id="to" type="textbox" placeholder="Period" class="form-control">
+						  <span class="input-group-addon">
+					    <i class="fa fa-calendar"></i>
+					  	</span>
+                                </div>
+                                <br><br>
+                                <button id="submitTrip" class="btn btn-success btn-default" type="next" value="Next"
+                                        style="width:100%">Submit
+                                </button>
+                                <br><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                               href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Manage Trips
+                                <i class="fa fa-angle-right"
+                                   style="font-size:3em; vertical-align:middle; float:right;"></i>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                         aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                            <!--start trip info-->
+                            <table border="0"
+                                   style="border-bottom:1px solid #f5f5f5; width:100%; font-size:1.5em; ">
+                                <tr>
+                                    <td width="100px"><img src="usa.jpg"
+                                                           style="width:80px; height:80px;"><br><br></td>
+
+                                    <td>
+                                        <table border="0" width="100%">
+                                            <tr>
+                                                <td width="100px"></td>
+                                                <td style="text-align:right; color:grey"><b>Sep 18</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" style="font-size:1.1em"><B>IT Expo</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Anaheim Convention Centre</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Anaheim, California, USA</td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--end trip info--><br>
+
+                            <!--start trip info-->
+                            <table border="0"
+                                   style="border-bottom:1px solid #f5f5f5; width:100%; font-size:1.5em; ">
+                                <tr>
+                                    <td width="100px"><img src="usa1.jpeg" style="width:80px; height:80px;"><br><br>
+                                    </td>
+
+                                    <td>
+                                        <table border="0" width="100%">
+                                            <tr>
+                                                <td width="100px"></td>
+                                                <td style="text-align:right; color:grey"><b>Oct 2</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" style="font-size:1.1em"><B>Black Hat Conference</b>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Mandalay Bay Convention Centre</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Las Vegas, Nevada, USA</td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--end trip info--><br>
+
+                            <!--start trip info-->
+                            <table border="0"
+                                   style="border-bottom:1px solid #f5f5f5; width:100%; font-size:1.5em; ">
+                                <tr>
+                                    <td width="100px"><img src="paris.jpg" style="width:80px; height:80px;"><br><br>
+                                    </td>
+
+                                    <td>
+                                        <table border="0" width="100%">
+                                            <tr>
+                                                <td width="100px"></td>
+                                                <td style="text-align:right; color:grey"><b>Nov 11</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" style="font-size:1.1em"><B>Technology Conference</b>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Paris, France</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"></td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--end trip info-->
+                        </div>
+                    </div>
+                </div>
+                <!--end accordion -->
             </div>
-        </div>
-        <div class="row">
-            <div class="accordian">
-                Manage Trip
-                <i class="fa fa-angle-right"></i>
+            <!--end of current tab -->
+
+            <!--begin past tab -->
+            <div role="tabpanel" class="tab-pane" id="past">
+
+                <!--insert past trips here-->
+
+
             </div>
+            <!--end of past tab -->
         </div>
-    </div>
-    <div class="container manageTrips">
+        <!-- end of tab content -->
 
     </div>
+
+
 </template>
 
