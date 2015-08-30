@@ -1,0 +1,257 @@
+<template name="itinerary">
+
+	<!--nav bar start -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header" style="text-align:center;">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <img src="user.png" class="navbar-brand" style="height:65px; ">
+      <img src="logo-menu.png" style="height:50px; padding-top:20px;">
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <!--start search -->
+      <form class="navbar-form navbar-left" role="search">
+			<div class="input-group">
+				<input id="search" type="textbox" placeholder="Search" class="form-control">
+				<span class="input-group-addon">
+			    <i class="fa fa-search"></i>
+			  	</span>
+			</div>
+      </form>
+      <!--end search -->
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">
+        <i class="fa fa-home"></i> &nbsp; Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="#"><i class="fa fa-suitcase"></i> &nbsp; Trips</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-plus-circle"></i> &nbsp; Add Purchase <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- navbar end -->
+
+<!-- <div class = "col-sm-4" style="height:100% !important; color:#fff;"></br> -->
+	
+	<!--current/past tabs -->
+	<ul class="nav nav-tabs" role="tablist">
+	    <li role="presentation" class="active"><a href="#current" aria-controls="current" role="tab" data-toggle="tab">Current</a></li>
+	    <li role="presentation"><a href="#past" aria-controls="past" role="tab" data-toggle="tab">Past</a></li>
+	</ul>
+
+	<!--current/past tabs content -->
+	<div class="tab-content">
+	<!--begin current tab -->
+    <div role="tabpanel" class="tab-pane active" id="current">
+    	<!--accordion start -->
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingOne">
+		      <h4 class="panel-title">
+		        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+		          Plan Trip
+		          <i class="fa fa-angle-down" style="font-size:3em; vertical-align:middle; float:right;"></i>
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne" style="text-align:center; ">
+		      <div class="panel-body" style="text-align:center">
+
+				<div style="text-align:center; ">
+					<a href="/suggestions"><i class="fa fa-angle-left" style="font-size:3em; vertical-align:middle; float:left;"></i></a>
+					<h3 style="color:#31CB82;">Itinerary for Efficient Flyer</h3>
+
+				Sat Sep 5 - Sun Sep 20
+				<br><br>
+				</div>
+<!--start itinerary-->
+<div class="row" style="text-align:center">
+			<table width="95%" border="0" class="content-font" style="border-top:1px solid #f5f5f5;">
+				<tr class="grey-line">
+					<td width="25%"><center><img src="airplane.png" style="width:50px;height:50px;"></center></td>
+					<td>
+						<br>
+						<span style="color:grey;">SATURDAY, SEPTEMBER 5 2015</span>
+						<table border="0">
+							<tr>
+								<td colspan="4">
+									&nbsp;<b>Singapore to Chennal</b><br>
+									&nbsp;<span style="color:grey; font-size:14px">Flight SIA2140</span>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									&nbsp;<span style="color:grey; font-size:14px">DEPARTS</span>
+								</td>
+								<td><span style="color:grey; font-size:14px">TERM/GATE</span></td>
+							</tr>
+							<tr>
+								<td style="min-width:70;">&nbsp;10:45pm</td>
+								<td style="min-width:50;">SAT</td>
+								<td style="min-width:50;">SG</td>
+								<td>Terminal 1</td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									&nbsp;<span style="color:grey; font-size:14px">ARRIVES</span>
+								</td>
+								<td><span style="color:grey; font-size:14px">TERM/GATE</span></td>
+							</tr>
+							<tr>
+								<td>&nbsp;12:45pm</td>
+								<td>SUN</td>
+								<td>CNI</td>
+								<td>Int. Terminal</td>
+							</tr>
+						</table><br>
+					</td>
+				</tr>
+
+				<tr class="grey-line">
+					<td><center><img src="car.png" style="width:50px;height:50px;"></center></td>
+					<td>
+						<br>
+						<span style="color:grey;">&nbsp;SUNDAY, SEPTEMBER 6 2015</span>
+						<table border="0">
+							<tr>
+								<td colspan="4">
+									&nbsp;<b>Car Pick-Up to Hotel</b><br>
+									&nbsp;1:30 PM
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4">
+									&nbsp;No. 85/86, Aroot Road, Porur, Karambakkam, Chennai<br>
+									&nbsp;Tamil Nadu 6001 16, India
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4">&nbsp;<span style="color:red;"><b>NOTE:</b></span> Driver's name is Kumar</td>
+							</tr>
+							
+						</table>
+					<br></td>
+				</tr>
+				
+				<tr>
+					<td><br><center><img src="Hotel.png" style="width:50px;height:50px;"></center></td>
+					<td>
+						<br>
+						<span style="color:grey;">&nbsp;SUNDAY, SEPTEMBER 6 2015</span>
+						<table border="0">
+							<tr>
+								<td colspan="4">
+									&nbsp;<b>Hotel Check-In</b><br>
+									&nbsp;2:30 PM
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4">
+									&nbsp;Booking Reference: ABCD1234567890
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<br/>
+			
+			
+			</table>
+			<div style="text-align:center; width=100%" ><a href="/managetrips" class="btn btn-success btn-default" style="width:100%; text-align:center;">Confirm</a></div>
+	</div><!--end itinerary-->
+		</div>
+
+		  </div>
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingTwo">
+		      <h4 class="panel-title">
+		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+		          Manage Trips
+		          <i class="fa fa-angle-right" style="font-size:3em; vertical-align:middle; float:right;"></i>
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+		      <div class="panel-body">
+
+<!--start finance-->
+<div class="container-fluid">
+		<div class="btn-group btn-group-justified" role="group" aria-label="...">
+			  <div class="btn-group" role="group">
+				<button type="button" class="btn btn-default">
+					<img src="incomeexpense.png" style="width:25px;height:25px;"><br>
+					<span style="font-size:14;">Expenses</span>
+				</button>
+			  </div>
+			  <div class="btn-group" role="group">
+				<button type="button" class="btn btn-default">
+					<img src="note.png" style="width:25px;height:25px;"><br>
+					<span style="font-size:14;">View Reports</span>
+				</button>
+			  </div>
+			  <div class="btn-group" role="group">
+				<button type="button" class="btn btn-default">
+					<img src="claim.png" style="width:25px;height:25px;"><br>
+					<span style="font-size:14;">Claims</span>
+				</button>
+			  </div>
+			</div>		
+		</div><br><br>
+		
+		<div class="container-fluid">
+			<table class="table" style="text-align:center">
+				<tr>
+					<th style="text-align:center">#</th>
+					<th style="text-align:center">Type</th>
+					<th style="text-align:center">Amount</th>
+					<th style="text-align:center">Date</th>
+					<th style="text-align:center">Claim</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Food</td>
+					<td>$120</td>
+					<td>02/09/15</td>
+					<td><i class="fa fa-download"></i></td>
+				</tr>
+			</table>
+		</div><!--end finance-->
+
+		      </div>
+		    </div>
+
+		</div>
+		<!--end accordion -->
+    </div><!--end of current tab -->
+
+    <!--begin past tab -->
+    <div role="tabpanel" class="tab-pane" id="past">
+	
+<!--insert past trips here-->
+
+
+
+
+	</div><!--end of past tab -->	
+	</div><!-- end of tab content -->
+</div>
+</div>
+</template>

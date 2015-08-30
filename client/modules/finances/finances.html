@@ -1,0 +1,138 @@
+<template name="finances">
+
+
+
+
+
+
+<!--current/past tabs content -->
+	<div class="tab-content">
+	<!--begin current tab -->
+    <div role="tabpanel" class="tab-pane active" id="current">
+    	<!--accordion start -->
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingOne">
+		      <h4 class="panel-title">
+		        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+		          Plan Trip
+		          <i class="fa fa-angle-down" style="font-size:3em; vertical-align:middle; float:right;"></i>
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+		      <div class="panel-body">
+
+
+
+
+
+
+<div style="text-align:center;" class="grey-line">
+	<a href="/managetrips"><i class="fa fa-angle-left" style="font-size:3em; vertical-align:middle; float:left;"></i></a>
+	<h3 style="color:#31CB82;">Finances</h3><br>
+</div><br>
+
+
+
+
+<!--start finance-->
+<div class="container-fluid">
+		<div class="btn-group btn-group-justified" role="group" aria-label="...">
+			  <div class="btn-group" role="group">
+				<button type="button" class="btn btn-default">
+					<img src="incomeexpense.png" style="width:25px;height:25px;"><br>
+					<span style="font-size:14;">Expenses</span>
+				</button>
+			  </div>
+			  <div class="btn-group" role="group">
+				<button type="button" class="btn btn-default">
+					<img src="note.png" style="width:25px;height:25px;"><br>
+					<span style="font-size:14;">View Reports</span>
+				</button>
+			  </div>
+			  <div class="btn-group" role="group">
+				<button type="button" class="btn btn-default">
+					<img src="claim.png" style="width:25px;height:25px;"><br>
+					<span style="font-size:14;">Claims</span>
+				</button>
+			  </div>
+			</div>		
+		</div><br><br>
+		
+		<div class="container-fluid">
+			<table class="table" style="text-align:center">
+				<tr>
+					<th style="text-align:center">#</th>
+					<th style="text-align:center">Type</th>
+					<th style="text-align:center">Amount</th>
+					<th style="text-align:center">Date</th>
+					<th style="text-align:center">Claim</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Food</td>
+					<td>$120</td>
+					<td>02/09/15</td>
+					<td><i class="fa fa-download"></i></td>
+				</tr>
+				{{> getpurchase}}
+			</table>
+		</div><!--end finance-->
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+		  </div>
+	<!-- 	  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingTwo">
+		      <h4 class="panel-title">
+		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+		          Manage Trips
+		          <i class="fa fa-angle-right" style="font-size:3em; vertical-align:middle; float:right;"></i>
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+		      <div class="panel-body">
+		        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+		      </div>
+		    </div> 
+		</div> -->
+		<!--end accordion -->
+    </div><!--end of current tab -->
+
+    <!--begin past tab -->
+    <div role="tabpanel" class="tab-pane" id="past">
+	
+<!--insert past trips here-->
+
+
+
+
+	</div><!--end of past tab -->	
+	</div><!-- end of tab content -->
+</div>
+</div>
+</template>
+
+<template name="getpurchase">
+	if (Session.get("purchase") === "bla"){
+        <tr>
+					<td>2</td>
+					<td>Drink</td>
+					<td>$80</td>
+					<td>02/09/15</td>
+					<td><i class="fa fa-download"></i></td>
+		</tr>
+	}
+
+</template>
