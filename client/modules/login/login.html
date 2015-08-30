@@ -5,39 +5,45 @@
 
 
     <div class="app-logo">
-        <img src="Logo.png" style="width:100%;">
+        <img src="Logo.png" style="width:70%; display:block; margin-left: auto; margin-right: auto;">
 
-        <div class="input-group">
-	<span class="input-group-addon">
-    <i class="fa fa-envelope"></i>
-  	</span>
+        <div class="container-fluid">
+            <div class="input-group">
+            <span class="input-group-addon">
+            <i class="fa fa-envelope"></i>
+            </span>
 
-            <input id="email" type="textbox" placeholder="Email Address" class="form-control">
+                <input id="email" type="textbox" placeholder="Email Address" class="form-control">
+            </div>
         </div>
 
         <br>
 
-        <div class="input-group">
-	<span class="input-group-addon">
-    <i class="fa fa-lock"></i>
-  	</span>
-            <input id="password" type="textbox" placeholder="Password" class="form-control">
-
+        <div class="container-fluid">
+            <div class="input-group">
+                <span class="input-group-addon">
+                <i class="fa fa-lock"></i>
+                </span>
+                <input id="password" type="textbox" placeholder="Password" class="form-control">
+            </div>
         </div>
 
         <br><br>
-        <button class="btn btn-success btn-default" type="submit" value="Sign In">Sign In</button>
+        <div class="container-fluid">
+            <button class="btn btn-success btn-default" type="submit" value="Sign In" style="width: 100%" >Sign In</button>
+        </div>
         <br>
-        <br>
+
 
     </div>
-    {{> loginButtonsBig}}
-
+    <div class="container-fluid" >
+        {{> loginButtonsBig}}
+    </div>
 
 </template>
 
 <template name="loginButtonsBig">
-    <a id="loginGoogle" class="btn btn-danger btn-default btn-lg btn-login google" href="#">
+    <a id="loginGoogle" class="btn btn-danger btn-default btn-md btn-login google" href="#" style="width: 100%">
         <i class="fa fa-google-plus fa-fw"></i> Sign in with Google
     </a>
 </template> 
