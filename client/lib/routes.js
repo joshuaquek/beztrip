@@ -13,7 +13,10 @@ Router.route('/', {				// Home Page
 	template: 'home'
 });
 
-
+Router.route('/checklist', { 	// Checklists
+	name: 'checklist',
+	template: 'checklist'
+});
 
 //---------------------------------- ROUTER CONFIG ------------------------------
 

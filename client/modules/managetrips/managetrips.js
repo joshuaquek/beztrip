@@ -7,6 +7,11 @@ Template.managetrips.events({
 	'click .documents': function(e){
 		e.preventDefault();
 		Router.go('/documents');
+	},
+
+	'click .checklist': function(e){
+		e.preventDefault();
+		Router.go('/checklist');
 	}
 });
 

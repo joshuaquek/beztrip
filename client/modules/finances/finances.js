@@ -1,9 +1,6 @@
-Template.myTemplate.helpers({
-  // textValue: function() {
-  //   if (this.en) {
-  //     return this.text.tc;
-  //   } else if (this.tc) {
-  //     return this.text.tc;
-  //   }
-  // }
+Template.finances.events({
+
+    'click #purchaseIt' : function(){
+        Router.go('addpurchase');
+    }
 });

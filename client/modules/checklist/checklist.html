@@ -1,0 +1,108 @@
+<template name="checklist">
+
+    <!--current/past tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#current" aria-controls="current" role="tab" data-toggle="tab">Current</a>
+        </li>
+        <li role="presentation"><a href="#past" aria-controls="past" role="tab" data-toggle="tab">Past</a></li>
+    </ul>
+
+    <!--current/past tabs content -->
+    <div class="tab-content">
+        <!--begin current tab -->
+        <div role="tabpanel" class="tab-pane active" id="current">
+            <!--accordion start -->
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                               aria-expanded="true" aria-controls="collapseOne">
+                                Trip Checklist
+                                <a href="{{pathFor 'managetrips'}}"><i class="fa fa-angle-left"
+                                   style="font-size:3em; vertical-align:middle; float:left;"></i>
+                                </a>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                         aria-labelledby="headingOne">
+                        <div class="panel-body">
+
+                            <div class="input-group"><!--start checklist-->
+                                <input type="text" class="form-control" aria-label="..." placeholder="Visa Application">
+			            <span class="input-group-addon">
+			        <input type="checkbox" aria-label="..." checked>
+			      </span>
+                            </div>
+                            <!-- /checklist -->
+                            <br>
+
+                            <div class="input-group"><!--start checklist-->
+                                <input type="text" class="form-control" aria-label="..." placeholder="Get Vaccination">
+			            <span class="input-group-addon">
+			        <input type="checkbox" aria-label="..." checked>
+			      </span>
+                            </div>
+                            <!-- /checklist -->
+                            <br>
+
+                            <div class="input-group"><!--start checklist-->
+                                <input type="text" class="form-control" aria-label="..." placeholder="Inform MINDEF ">
+			            <span class="input-group-addon">
+			        <input type="checkbox" aria-label="..." checked>
+			      </span>
+                            </div>
+                            <!-- /checklist -->
+                            <br>
+
+                            <div class="input-group"><!--start checklist-->
+                                <input type="text" class="form-control" aria-label="..."
+                                       placeholder="Buy Travel Insurance">
+			            <span class="input-group-addon">
+			        <input type="checkbox" aria-label="..." checked>
+			      </span>
+                            </div>
+                            <!-- /checklist -->
+                            <br>
+
+                            <div class="input-group"><!--start checklist-->
+                                <input type="text" class="form-control" aria-label="..."
+                                       placeholder="Bring Passport on Trip Date">
+			            <span class="input-group-addon">
+			        <input type="checkbox" aria-label="..." checked>
+			      </span>
+                            </div>
+                            <!-- /checklist -->
+                            <br>
+                            <br><br>
+                            <button class="btn btn-success btn-default" type="next" value="Next" style="width:49%">Add
+                                New
+                            </button>
+
+                            <button class="btn btn-danger btn-default" type="next" value="Next" style="width:49%">
+                                Delete
+                            </button>
+                            <br><br>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--end accordion -->
+            </div>
+            <!--end of current tab -->
+
+            <!--begin past tab -->
+            <div role="tabpanel" class="tab-pane" id="past">
+
+                <!--insert past trips here-->
+
+
+            </div>
+            <!--end of past tab -->
+        </div>
+        <!-- end of tab content -->
+    </div>
+</template>
