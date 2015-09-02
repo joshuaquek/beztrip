@@ -16,9 +16,9 @@
 
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="{{active 'home'}}"><a href="{{pathFor route='home'}}"><i class="fa fa-home"></i> &nbsp;Home</a></li>
-                    <li class="{{active 'trips'}}"><a href="{{pathFor route='trips'}}"><i class="fa fa-suitcase"></i> &nbsp;Trips</a></li>
-                    {{#if onFinancesPage 'finances'}}<li class="{{active 'addpurchase'}}"><a href="{{pathFor route='addpurchase'}}"><i class="fa fa-plus-circle"></i>&nbsp;Add Purchase</a></li>{{/if }}
+                    <li id="click1" class="{{active 'home'}}"><a href="{{pathFor route='home'}}"><i class="fa fa-home"></i> &nbsp;Home</a></li>
+                    <li id="click2" class="{{active 'trips'}}"><a href="{{pathFor route='trips'}}"><i class="fa fa-suitcase"></i> &nbsp;Trips</a></li>
+                    {{#if onFinancesPage 'finances'}}<li id="click3" class="{{active 'addpurchase'}}"><a href="{{pathFor route='addpurchase'}}"><i class="fa fa-plus-circle"></i>&nbsp;Add Purchase</a></li>{{/if }}
                     <li ><button id="logout">Logout</button></li>
                 </ul>
             </div><!--/.nav-collapse -->

@@ -6,7 +6,9 @@ Template.navigation.events({
                 // Display the logout error to the user however you want
             }
         });
-    }
+        Router.go('login');
+    },
+
 });
 
 Template.navigation.helpers({

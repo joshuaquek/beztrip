@@ -8,3 +8,11 @@ Template.loginButtonsBig.events({
         }, Router.go('home'));
     }
 });
+
+Template.login.events({
+    'click #loginNow': function(e, t) {
+        e.preventDefault();
+        Router.go('home');
+    }
+});
+
